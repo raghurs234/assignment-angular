@@ -1,0 +1,20 @@
+<div class="table-container">
+
+  <table *ngIf="tableList">
+    <tr>
+      <th *ngFor="let header of tableList.header" (click)="sortTable(header)"> 
+       {{header}}  <a  class="sort-by"> </a>
+      </th>
+    </tr>
+    <tr *ngFor="let student of tableList.studentInfo">
+      <td>{{student.name}}</td>
+      <td>{{student.class}}</td>
+      <td>{{student.section}}</td>
+      <td>{{student.sub1}}</td>
+      <td>{{student.sub2}}</td>
+      <td>{{student.sub3}}</td>
+    </tr>
+  </table>
+
+
+</div>

@@ -1,0 +1,38 @@
+
+{
+    "header" : ["Name", "Class", "Section", "Subject1", "Subject2", "Subject3"],
+    "studentInfo": [
+      {
+      "name": "Ravi",
+      "class":  8,
+      "section": "A",
+      "sub1": "89",
+      "sub2": "54",
+      "sub3": "54"
+    },
+    {
+      "name": "Anandh",
+      "class":  3,
+      "section": "B",
+      "sub1": "33",
+      "sub2": "43",
+      "sub3": "53"
+    },
+    {
+      "name": "Bharath",
+      "class":  8,
+      "section": "A",
+      "sub1": "44",
+      "sub2": "33",
+      "sub3": "45"
+    },
+    {
+      "name": "Guru",
+      "class":  3,
+      "section": "C",
+      "sub1": "66",
+      "sub2": "88",
+      "sub3": "44"
+    }
+  ]
+}

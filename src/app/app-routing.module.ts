@@ -18,6 +18,10 @@ const routes: Routes = [
     path: 'timerSubject',
     loadChildren: () => import('./timer-subject/timer.module').then(m => m.TimerSubjectModule)
   },
+  {
+    path: 'table',
+    loadChildren: () => import('./custom-table/table.module').then(m => m.TableModule)
+  },
 ];
 
 @NgModule({

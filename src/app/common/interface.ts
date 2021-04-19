@@ -17,3 +17,14 @@ export interface EventCount {
     pause: number;
 }
 
+export interface StudentList {
+    header: string[];
+    studentInfo: {
+        name: string;
+        class: number;
+        section: string;
+        sub1: string;
+        sub2: string;
+        sub3: string;
+    }[];
+}
