@@ -1,0 +1,18 @@
+<div class="container">
+  <div>
+    Enter Time:  <input type="number" #time>
+  </div>
+ <div class="action">
+  <button (click)="timerAction()">{{buttonText}}</button>
+  <button (click)="reset()">Reset</button>
+ </div>
+
+ 
+ <div class="pause-info" >
+  <ng-container *ngFor="let event of timerstate.events" >
+    <p *ngIf="event.type === 'pause'">paused at {{event.timer}}</p>
+  </ng-container>
+  
+ </div>
+
+</div>

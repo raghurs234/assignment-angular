@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="timer-container">
+    <div class="timer">
+      <app-timer-enter [getTime]="currentTimeValue"></app-timer-enter>
+      <app-timer-countdown
+        (currentTimeEvent)="getTime($event)"
+        (timerActionEvent)="getEvents($event)"
+        (timerActionCountEvent)="getTimerActionCount($event)"
+      >
+      </app-timer-countdown>
+    </div>
+    <div class="timer-info">
+      <app-event-list [getEventList]="events"></app-event-list>
+      <app-event-count [eventCount]="eventCount"></app-event-count>
+    </div>
+  </div>
+</div>

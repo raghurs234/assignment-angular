@@ -1,0 +1,16 @@
+.container{
+    padding: 40px;
+    .action{
+        position: relative;
+        left: 75px;
+        button {
+            margin: 10px 0px 1px 5px;
+        }
+    }
+    .pause-info{
+        margin-top: 20px;
+        p{
+            margin: 0px;
+        }
+    }
+}

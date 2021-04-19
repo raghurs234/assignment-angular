@@ -1,0 +1,15 @@
+<div class="container">
+ 
+  <div class="header">
+    <div class="manage-view">
+      <span [ngClass]="{'active': activeTab === 'gridView'}" (click)="activeTab = 'gridView'">Grid View</span>   
+       <span [ngClass]="{'active': activeTab === 'listView'}" (click)="activeTab = 'listView'">List View</span>
+    </div>
+  </div>
+
+  <div class="item-list">
+    <div  [ngClass]="{'grid-item' : activeTab === 'gridView', 'list-item' : activeTab === 'listView'}" class="item" *ngFor="let product of productList">
+      {{product.name}}
+    </div>
+  </div>
+</div>

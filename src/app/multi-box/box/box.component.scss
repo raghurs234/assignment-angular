@@ -1,0 +1,19 @@
+.box-container {
+  div {
+    text-align: center;
+    border: 1px solid red;
+    padding: 10px;
+    @keyframes rotating {
+        from {
+          transform: rotateY(0deg);
+        }
+        to {
+          transform: rotateY(360deg);
+        }
+      }
+      .animation {
+        display: inline-block;
+        animation: rotating 2s linear infinite;
+      }
+  }
+}

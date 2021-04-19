@@ -1,0 +1,12 @@
+<div class="event-list-container">
+  <ng-container *ngIf="getEventList && getEventList.events" >
+    <p *ngFor="let event of getEventList.events">
+      
+      <span>{{event.type === 'pause' ? 'Paused  at ' : 'Started at '}}</span>
+      <span>{{event. currentTime | date:'d-m-yyyy hh:mm:ss aaa'}}</span>
+    </p>
+  </ng-container>
+</div>
+
+
+

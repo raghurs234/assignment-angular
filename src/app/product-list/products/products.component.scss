@@ -1,0 +1,45 @@
+@import "../../../theme.scss";
+
+.container{
+
+  .header{
+    position: relative;
+    min-height: 40px;
+    .manage-view {
+      position: absolute;
+      right: 5px;
+      span{
+        border: 1px solid $baseColour;
+        padding: 5px;
+      }
+      .active {
+        background: $secondayColour;
+      }
+    }
+  }
+  .item-list {
+    display: flex;
+    flex-wrap: wrap;
+    .grid-item {
+      flex: 1 0 21%;
+      margin: 5px;
+      height: 100px;
+      background-color: $secondayColour;
+    }
+
+    .list-item {
+      flex: 1 0 40%;
+      margin: 5px;
+      height: 100px;
+      background-color: $secondayColour;
+
+    }
+    
+  }
+ 
+    -webkit-box-shadow: 0 0 5px 2px rgb(90, 55, 55);
+    -moz-box-shadow: 0 0 5px 2px rgb(124, 63, 63);
+    box-shadow: 0 0 5px 2px rgb(167, 101, 101);
+
+
+}

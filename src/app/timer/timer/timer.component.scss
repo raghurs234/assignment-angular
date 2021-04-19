@@ -1,0 +1,31 @@
+.container { 
+    border: 1px solid black;
+    .timer{
+        padding: 16px;
+        display: flex;
+        justify-content: space-around;
+        app-timer-enter{
+            flex-grow: 4;
+            border: 1px solid black;
+            margin-right: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        app-timer-countdown{
+            flex-grow: 4;
+            border: 1px solid black;
+        }
+    }
+    .timer-info{
+        display: flex;
+        justify-content: space-around;
+        app-event-list{
+            flex-grow: 3;
+        }
+        app-event-count{
+            flex-grow: 4;
+        }
+    }
+}
