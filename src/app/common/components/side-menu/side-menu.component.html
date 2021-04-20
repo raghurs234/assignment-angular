@@ -1,0 +1,6 @@
+<div *ngFor="let menu of menuList" class="menu">
+  <a [routerLink]="[menu.path]"  routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+    {{menu.title}}
+  </a>
+  
+</div>

@@ -37,7 +37,7 @@ export class DynamicDivComponent implements OnInit, AfterViewInit {
   onWindowScroll(): void {
     const pos = (document.documentElement.scrollTop || document.body.scrollTop) + document.documentElement.offsetHeight;
     const max = document.documentElement.scrollHeight;
-    if ( pos >= max )   {
+    if ( pos >= max - 1 )   {
       this.createDynamicDiv(30);
      }
     }

@@ -1,0 +1,20 @@
+@import "../../../../theme.scss";
+
+.menu{
+ height: 40px;
+ a{
+    height: 100%;
+    align-items: center;
+    display: flex;
+    color: $baseColour;
+    text-decoration: none;
+    font-size: 18px;
+ }
+}
+
+.active{
+    background: $secondayColour;
+   
+   
+   
+}

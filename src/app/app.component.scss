@@ -1,0 +1,21 @@
+@import '../theme.scss';
+@import url('../theme.scss');
+
+.app-container{
+    display: flex;
+    height: 100%;
+    .side-menu-container{
+        width: #{$menuWidth + $unit};
+        min-width: #{$menuWidth + $unit};
+        border-right: 1px solid black;
+        position: fixed;
+        height: 100%;
+    }
+    .main-container{
+        position: relative;
+        padding: 32px;
+        width: calc(100% - #{$menuWidth + $unit});
+        left: #{$menuWidth + $unit};
+        box-sizing: border-box;
+    }
+}
