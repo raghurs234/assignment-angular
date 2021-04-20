@@ -22,6 +22,10 @@ const routes: Routes = [
     path: 'table',
     loadChildren: () => import('./custom-table/table.module').then(m => m.TableModule)
   },
+  {
+    path: 'dynamicDiv',
+    loadChildren: () => import('./dynamic-div/dynamic-div.module').then(m => m.DynamicDivModule)
+  },
 ];
 
 @NgModule({
